@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://emojicombos.com/images/emojis/brain.png" alt="brain-cache" width="100">
+  <a width="100">🧠</a>
   <br>
   brain-cache
 </h1>
