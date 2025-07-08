@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%E6%A8%A1%E6%9D%BF/%E8%AF%BE%E7%A8%8B%E6%A8%A1%E6%9D%BF/">
+        <link rel="prev" href="../%E5%88%86%E6%94%AF%E8%A7%84%E8%8C%83/">
       
       
-        <link rel="next" href="../commit%E8%A7%84%E8%8C%83/">
+        <link rel="next" href="../%E6%8F%90%E4%BA%A4%E5%89%8D%E6%A3%80%E6%9F%A5%E5%8D%95/">
       
       
       <link rel="icon" href="../../images/favicon.ico">
@@ -20,7 +20,7 @@
     
     
       
-        <title>分支规范 - StudyRx</title>
+        <title>commit 规范 - StudyRx</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#angular" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              分支规范
+              commit 规范
             
           </span>
         </div>
@@ -368,17 +373,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E5%88%86%E6%94%AF%E8%A7%84%E8%8C%83/" class="md-nav__link">
         
   
   
@@ -389,7 +387,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -399,10 +396,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../commit%E8%A7%84%E8%8C%83/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -413,6 +419,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -465,6 +472,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -480,46 +489,26 @@
 
 
 
-  <h1>分支规范</h1>
-
-<table>
-<thead>
-<tr>
-<th>分支名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>main</code></td>
-<td><strong>主分支</strong>，部署到 GitHub Pages（最终上线内容），只从 <code>dev</code> 合并</td>
-</tr>
-<tr>
-<td><code>dev</code></td>
-<td><strong>开发主分支</strong>，所有新内容、调整先合并到这里</td>
-</tr>
-<tr>
-<td><code>feature/*</code></td>
-<td><strong>功能/文档内容更新分支</strong>，课程专题的编辑/新增内容使用</td>
-</tr>
-<tr>
-<td><code>fix/*</code></td>
-<td><strong>功能/文档内容修正分支</strong>，课程专题的修正内容使用</td>
-</tr>
-<tr>
-<td><code>profile/*</code></td>
-<td>个人页维护分支，用于个人页的新增、修改、删除等操作，*处写个人页的用户名</td>
-</tr>
-<tr>
-<td><code>docs</code></td>
-<td>项目自身文档（如贡献指南、格式模板、commit规范）用，可选</td>
-</tr>
-<tr>
-<td><code>gh-pages</code></td>
-<td>GitHub Pages 自动部署分支，由 <code>mkdocs gh-deploy</code> 自动生成</td>
-</tr>
-</tbody>
-</table>
+<h1 id="angular">针对这个文档的额外 Angular 规范</h1>
+<p>我们规定这个仓库的 commit 使用 Angular 规范，但单纯的 Angular 规范并不足以描述一个学习资料仓库，故我们规定针对这个文档的额外 Angular 规范：</p>
+<ul>
+<li>build：对构建系统或者外部依赖项进行了修改</li>
+<li>ci：对CI配置文件或脚本进行了修改</li>
+<li>docs：改动说明文档、非学习资料本体的内容（如README）</li>
+<li>feat：增加新的特征</li>
+<li>fix：修复 bug，修改错误、笔误、格式问题</li>
+<li>pref：提高性能的代码更改</li>
+<li>refactor：既不是修复 bug 也不是添加特征的代码重构</li>
+<li>style：不影响代码含义的修改，比如空格、格式化、缺失的分号等</li>
+<li>test：增加确实的测试或者矫正已存在的测试</li>
+<li>add：对学习资料添加新的资料内容、文档章节等（相当于 feat）</li>
+<li>update：对已有文档内容进行更新（相当于 refactor/improve）</li>
+<li>meta：改动配置文件（如 mkdocs.yml、.gitignore）</li>
+<li>style：格式调整，无实质内容变化（如空格、换行）</li>
+<li>move：文件或目录结构调整</li>
+<li>remove：删除不必要的文档或内容</li>
+<li>prof：改动你的个人文档，括号内放置你的名称</li>
+</ul>
 
 
 
