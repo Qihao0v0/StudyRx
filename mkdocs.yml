@@ -10,7 +10,9 @@ theme:
   search_index_only: true
 nav:
   - 前言: index.md
-  - 个人页: ./个人页/个人页中心页.md
+  - 个人页:
+    - 中心页: ./个人页/个人页中心页.md
+    - Qihao的个人页: ./个人页/Qihao的个人页/Qihao.md
   - 规范文件:
     - 模板:
       - 课程模板: ./规范文件/模板/课程模板.md
