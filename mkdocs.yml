@@ -10,12 +10,15 @@ theme:
   search_index_only: true
 nav:
   - 前言: index.md
-  - 个人页: ./个人页/个人页中心页.md
+  - 个人页:
+    - 中心页: ./个人页/个人页中心页.md
+    - Qihao的个人页: ./个人页/Qihao的个人页/Qihao.md
   - 规范文件:
     - 模板:
       - 课程模板: ./规范文件/模板/课程模板.md
     - 分支规范: ./规范文件/分支规范.md
-    - commit 规范: ./规范文件/针对这个文档的额外Angular规范.md
+    - commit 规范: ./规范文件/commit规范.md
+    - 提交前检查单: ./规范文件/提交前检查单.md
 plugins:
   - tags
   - meta
